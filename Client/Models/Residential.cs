@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace Client
 {
@@ -19,6 +20,10 @@ namespace Client
         /// <para>On the default board, this would mean 0 = Go, 10 = Jail/Just Visiting, 20 = Free Parking, and 30 = Go To Jail.</para>
         /// </summary>
         public int Location { get; }
+        /// <summary>
+        /// Returns a Brush representing the value of the set colour.
+        /// </summary>
+        public Brush Set { get; }
         /// <summary>
         /// The owner of the property.
         /// </summary>
