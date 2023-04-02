@@ -34,9 +34,25 @@ namespace Client
         { 
             get
             {
-                throw new NotImplementedException();
+                return Rents[DevelopmentLevel];
             }
         }
+        /// <summary>
+        /// <para>Returns the level of development on this property.</para>
+        /// <para>0 = property undeveloped; 1 = one house, etc.; 5 = hotel.</para>
+        /// </summary>
+        public int DevelopmentLevel { get; set; }
+        /// <summary>
+        /// Returns the cost of building houses and/or hotels (each) on this property.
+        /// </summary>
+        public int DevelopmentCost { get; }
+        #endregion
+
+        #region Private variables
+        /// <summary>
+        /// The rent brackets/tiers of this residential property, increasing from the property's undeveloped rental amount (at index 0) to its amount with a hotel constructed (at index 5).
+        /// </summary>
+        private int[] Rents = new int[6];
         #endregion
 
         #region INotifyPropertyChanged implementation
