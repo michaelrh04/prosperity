@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Client"
              xmlns:controls="http://schemas.modernwpf.com/2019"
-             StartupUri="MenuWindow.xaml">
+             StartupUri="Views\MenuWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
