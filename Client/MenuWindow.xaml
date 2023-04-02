@@ -6,9 +6,28 @@
         xmlns:local="clr-namespace:Client"
         xmlns:controls="http://schemas.modernwpf.com/2019"
         mc:Ignorable="d"
+        
         controls:WindowHelper.UseModernWindowStyle="True"
+        controls:ThemeManager.IsThemeAware="True"
+        controls:TitleBar.Foreground="White"
+        controls:TitleBar.Background="DarkGreen"
+        controls:TitleBar.Style="{DynamicResource StyleTitleBar}"
+        Foreground="{DynamicResource SystemControlPageTextBaseHighBrush}"
+        Background="{DynamicResource SystemControlPageBackgroundAltHighBrush}"
+        
         Title="Prosperity" Height="450" Width="800">
+    
+    <!-- Window resources and styles -->
+    <Window.Resources>
+        <!-- Set the title bar controls (minimise, close, etc.) to use the dark theme to make them white. -->
+        <Style x:Key="StyleTitleBar" TargetType="controls:TitleBarControl">
+            <Setter Property="controls:ThemeManager.RequestedTheme" Value="Dark" />
+        </Style>
+    </Window.Resources>
+    
+    <!-- Content -->
     <Grid>
         
     </Grid>
+    
 </Window>
