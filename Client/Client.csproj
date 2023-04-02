@@ -77,6 +77,8 @@
     <Compile Include="Models\IPurchasable.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Models\Residential.cs" />
+    <Compile Include="Models\Station.cs" />
+    <Compile Include="Models\Utility.cs" />
     <Compile Include="Views\GameWindow.xaml.cs">
       <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
