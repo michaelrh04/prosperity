@@ -73,6 +73,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Generic.cs" />
+    <Compile Include="Models\GenericTileTypeEnum.cs" />
     <Compile Include="Models\ILandable.cs" />
     <Compile Include="Models\IPurchasable.cs" />
     <Compile Include="Models\Player.cs" />
