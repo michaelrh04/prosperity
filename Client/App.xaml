@@ -10,6 +10,7 @@
                 <!-- ModernWpfUI controls -->
                 <controls:ThemeResources />
                 <controls:XamlControlsResources />
+                <controls:ThemeResources RequestedTheme="Light" AccentColor="DarkGreen" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
